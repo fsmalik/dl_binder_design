@@ -49,7 +49,7 @@ python $DLDESIGNDIR/af2_initial_guess/predict.py -silent out.silent
 
 cd $DLDESIGNDIR/include/silent_tools/
 
-./silentextract out.silent
+./silentextract $RFRESULTSDIR/out.silent
 
 mv *.pdb $RFRESULTSDIR/
 
