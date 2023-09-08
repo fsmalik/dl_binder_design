@@ -98,7 +98,7 @@ These pdb files can be collected into a silent file (or just used as PDB files) 
 
 
 
-With full path for directory with results from RFdiffusion and full path for dl_binder_design you can run the following script - pyrosetta env needs to be active.
+With full path for directory with results from RFdiffusion and full path for dl_binder_design you can run the following script - dl_design_binder (pyrosetta) env needs to be active.
 
 ```
 ./run_dl_db_RF.sh /path/to/RFdiffusion/results /path/to/dl_design_binder/base-dir
