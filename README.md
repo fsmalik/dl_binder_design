@@ -96,3 +96,10 @@ python <base_dir>/helper_scripts/addFIXEDlabels.py --pdbdir /dir/of/pdbs --trbdi
 
 These pdb files can be collected into a silent file (or just used as PDB files) and run through the ProteinMPNN script which will detect the FIXED labels and keep those sequence positions fixed.
 
+
+
+With full path for directory with results from RFdiffusion and full path for dl_binder_design you can run the following script - pyrosetta env needs to be active.
+
+```
+./run_dl_db_RF.sh /path/to/RFdiffusion/results /path/to/dl_design_binder/base-dir
+```
