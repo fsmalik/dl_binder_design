@@ -54,3 +54,5 @@ cd $DLDESIGNDIR/include/silent_tools/
 mv *.pdb $RFRESULTSDIR/
 
 cd $RFRESULTSDIR
+
+mkdir pdb_results_af && mv *.pdb pdb_results_af
