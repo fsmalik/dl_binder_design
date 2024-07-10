@@ -8,7 +8,7 @@ Help()
    # Display Help
    echo "Runs dl_binder_design for RF diffusion results step by step. All files will end up in the directory with RFdiffusion results"
    echo
-   echo "Syntax: dl_binder_design_RF.sh /path/to/dir/with/rfdiffusion/results/ /path/to/dl_binder_design/base-dir/ [-h]"
+   echo "Syntax: run_dl_db_RF.sh /path/to/dir/with/rfdiffusion/results/ /path/to/dl_binder_design/base-dir/ [-h]"
    echo "options:"
    echo "  -h     Print this Help."
    echo
