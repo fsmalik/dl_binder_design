@@ -40,7 +40,7 @@ command -v score_jd2 >/dev/null 2>&1 || {
     #echo >&2 "You must have extract_pdbs on your path!"; 
     #echo >&2 "Try doing cd silent_tools; ln -s /software/rosetta/latest/bin/extract_pdbs ."
     #exit 1; 
-    jd2_program=./pyjd2
+    jd2_program=pyjd2
 }
 
 
@@ -48,7 +48,7 @@ command -v score_jd2 >/dev/null 2>&1 || {
 tmp_file=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13)
 tmp_file="tmp_${tmp_file}.silent"
 
-$jd2_program -l $tmp_list -out:file:silent $tmp_file -out:file:silent_struct_type binary 1>&2
+./$jd2_program -l $tmp_list -out:file:silent $tmp_file -out:file:silent_struct_type binary 1>&2
 
 ./silentls $tmp_file | sed 's/_0001$//g' | ./silentrename $tmp_file
 
